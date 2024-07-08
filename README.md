@@ -1,10 +1,8 @@
-# Team Marshall & Co - Major Group Project
+# PollAnywhere
+*An responsive polling web application for Informatics lectures by Team Marshall & Co*
 
-## Project Title
-C3: Interactive polling for Informatics lectures
-
-## Application Name
-PollAnywhere
+## What is this ?
+> A spin-off of the well known [PollEverywhere](https://www.polleverywhere.com/) aimed towards Informatics lecturers developed using the [MERN stack](https://www.mongodb.com/resources/languages/mern-stack)
 
 ## Authors
 - Tanvir Sahota
