@@ -6,15 +6,14 @@ const path = require("path")
 const app = express()
 const mongoose = require('mongoose')
 
-const allowEveryOrigin = true;
-const URI = process.env.MONGO_URI;
+const allowEveryOrigin = false;
 
 
 if (!allowEveryOrigin)
 {
   //Only allows requests from one host for security, enable in production
   const corsOptions = { 
-  origin : ['http://localhost:3000'], 
+  origin : [process.env.FRONTEND_URL],
 } 
 app.use(cors(corsOptions))
 }
