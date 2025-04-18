@@ -23,6 +23,14 @@ else
 app.use(cors())
 }
 
+// Setting security headers
+app.use((req, res, next) => {
+  res.setHeader("X-Frame-Options", "ALLOW-FROM https://sujan-naik.github.io");
+  res.setHeader("Content-Security-Policy", "frame-ancestors 'self' https://sujan-naik.github.io");
+  next();
+});
+
+
 //import all routes
 const quizRoutes = require('./routes/quizzes')
 const questionRoutes = require("./routes/questions")
