@@ -6,7 +6,7 @@ const path = require("path")
 const app = express()
 const mongoose = require('mongoose')
 
-const allowEveryOrigin = false;
+const allowEveryOrigin = true;
 
 
 if (!allowEveryOrigin)
